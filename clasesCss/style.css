@@ -1,0 +1,17 @@
+p {
+    color: blue;
+    font-size: 40px;
+}
+/* formas de agregar stylos 
+1. Por la etiqueta o elemento de html
+2. Por la clase: que es un atributo de la etiqueta, se empieza con punto y el nombre de la clase: .parrafo
+3. Por id: #texto*/
+
+.parrafo {
+    color: red;
+}
+
+#texto {
+    color: yellow;
+    font-size: 24px;
+}
