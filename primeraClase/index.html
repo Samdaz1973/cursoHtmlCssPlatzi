@@ -1,0 +1,45 @@
+<!DOCTYPE html><!--Esta linea la que le dice al navegador que es un documento con etiquetas html5-->
+<html lang="en"><!--Contenedor padre; el lang le dice al navegador qué lenguaje tiene el proyecto-->
+<head><!--los tabuladores son importantes para agilizar la lectura; muchas etiquetas se abren y se cierran pero algunas otras no, solo se autocierran; Head y body son contenedores hermanos; en head va todo lo que necesita el navegador para poder cargar el proyecto, pero no es visual para el usuario, por ejemplo fuentes, css; el head es como el cerebro-->
+    <meta charset="UTF-8"><!--se cierran sola; este atributo utf-8, es para que el navegador entienda los carecteres especiales, como ñ tildes y otros emojis-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--descripción de nuestra página, cuando sale en el buscador, sale la descripción; hay otro meta name="robots" con un content="index-follow que autoriza al robot del buscador nos ayuda a colocar nuestra página-->
+    <title>Document</title><!--el que se pone en la pestaña de la página-->
+    <!--para proyectos responsive se usa el viewport y el width, este lo trae por defecto-->
+    <link rel="stylesheet" href=""><!--se usa para agregar el css: el rel indica que el documento que va a cargar es una hoja de estilos y el href la referencia de donde se encuentra el documento, es decir la ruta-->
+</head>
+<body><!--Aquí va todo lo que va a ver el usuario; imágenes, fotos, videos-->
+<!--Dos tipos de etiquetas, 
+    de contenido: llevan texto, imágenes y videos 
+    contenedoras: llevan más etiquetas y ayudan a dar estructura a la página, maquetación o layout, no muestran nada a la hora de renderizar; una estructura correcta se le llama HTML semántico-->
+    <header>
+        <nav></nav>
+    </header><!--es el encabezado de nuestra página, si tiene una barra de navegación va en este header-->
+    <main>
+        <section>
+            <article>
+
+            </article><!--van dentro de los section; pueden haber varios-->
+                <figure>
+                    <img src="" alt=""><!-- el src es el lugar de donde vamos a tomar la imagen, puede ser de una carpeta ubicada en la carpeta del proyecto, o de un enlace; el atributo alt es una descripción de la imagen; esta etiqueta de imagen es bueno meterla en otra etiqueta contenedora para poderla tratar, darle ubicación, tamaño, lo mejor es hacerlo dentro de una etiqueta figure-->
+                    <figcaption>se pone una descripcióm</figcaption><!-- es la etiqueta semánticamente correcta para poner un pie de la foto con el autor u otra descripción-->
+                </figure>
+        </section><!--van dentro del main-->
+        <ul>
+            <li>Manzanas</li><!--el elemento de la lista-->
+        </ul><!--nos ayudan a crear listas; lista desordenada, viene como bullets o viñetas-->
+        <ol>
+            <li>Peras</li>
+        </ol><!--lista ordenada, numerada-->
+        <div></div><!--es otra etiqueta contenedora y es comodin se puede usar en cualquier parte, pero no se debe abusar de ella, debe ir entre las otras que definen cada parte del cuerpo-->
+        <!-- etiquetas de texto -->
+        <h1>Soy un título</h1><!--etiquetas de encabezado van hasta h6, y le dice al navegador que es un título-->
+        <h2>Soy otro título</h2>
+        <h3>Soy un título más</h3>
+        <p>soy un texto</p><!--etiqueta de párrafo-->
+        <a href="#">Soy un link</a><!-- etiqueta de ancla: nos permite a generar hipervículos -->
+
+    </main><!--va a ir afuera y debajo del header; después del encabezado y barra de navegación viene el contenido principal-->
+    <footer></footer><!--es el pie de la página-->
+</body>
+</html>
