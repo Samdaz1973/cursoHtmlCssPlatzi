@@ -1,0 +1,27 @@
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0px;/* cuando ponrmod paddin le agregamos un margen interno al contenedor, en este caso al de la lista ul y todos los elementos contenidos; por defecto el navegador le agrega ciertos stylos a las etiquetas, entre ellos los márgenes, por eso hay que quitarlos */
+    background-color: #13a4a4;
+}
+.main-nav_item {
+    display: inline-block;
+}
+.main-nav_item a { /*a todas las etiquetas "a" que están adentro de la clase main, se le deben agregar los siguientes estilos */
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgb(217, 255, 0);
+}
+/* las Pseudoclases definen el stylo de un estado especial de un elemento; color, tamaño stylo */
+.main-nav_item a:hover {/*esta pseudoclase hace que cuando se pase el mouse por encima cambie de color la fuente*/
+    color: blue;
+}
+.main-nav_item a:active {/*muestra cuando está activo; cuando le doy click se pone rojo*/
+    color: red;
+}
+/* las Pseudoelemento definen o cambia un elemento */
+.main-nav_item a::after {/* después del elemento ancla que está en esta clase agrégale este contenido en este caso una linea al lado derecho*/
+    content: " | ";
+} 
