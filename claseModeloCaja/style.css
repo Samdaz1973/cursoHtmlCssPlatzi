@@ -1,0 +1,14 @@
+* {/* el asterisco es el selector universal; debo resetear el padding y margin que pone el navegador por defecto para no tener dificultades con los márgenes que le de a los elementos*/
+    box-sizing: border-box;/*se encarga de sumar el padding con el width del elemento, para que no se salga del 100%; hace un cálculo automático para que no se salga de la ventana del navegador de lo contrario queda con un efecto scroll a los lados; no se puede agregar margin, porque esta dimensión no la recalcula, solo el padding y border*/
+    padding: 0;
+    margin: 0%;
+    /*estos elementos deben iniciar toda hoja de css para evitar errores*/
+}
+
+main {
+    width: 100%;/*nos dice que_tan ancho va a ser nuestro contenedor en este proyecto*/
+    height: 500px;/*me dice qué_tan alto va a ser la caja general*/
+    border: 20px solid grey;
+    border-radius: 12px;
+    padding: 20px 35px;
+}
