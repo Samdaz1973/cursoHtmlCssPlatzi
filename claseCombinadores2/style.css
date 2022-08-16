@@ -1,0 +1,12 @@
+/*COMBINADOR HIJO DIRECTO*/
+div > p {/*el padre div que se mayor de una etique p, o la etiqueta p que sea hija directa de una etiqueta div*/
+    color: red;
+}
+
+/*COMBINADOR DESCENDIENTE
+Ej: .nav a; quiere decir todas las etiquetas a que estén dentro del contenedor de clase nav
+*/
+/*div p {
+    color: red;
+}*/
+/*de esta manera todos los textos toman el color rojo porque todos son descendientes del div principal*/
