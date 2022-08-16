@@ -1,0 +1,10 @@
+/*
+h2 + p {/*quiero que me coloque en rojo a todas las etiquetas h2 que sean cercanas a una etiqueta p; este tipo es llamado hermano cercano adjancent sibling  */
+   /* color: red;
+}
+*/
+/*EJEMPLO HERMANO GENERAL
+SIGNO EQUIVALENTE O VIRGULIÑA*/
+h2 ~ p {/*las dos etiquetas p tienen como hermano general un h2*/
+    color: greenyellow;
+}
