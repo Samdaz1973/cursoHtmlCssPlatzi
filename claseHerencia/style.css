@@ -1,0 +1,7 @@
+html { /*desde aquí llamo la etiqueta html del archivo y la edito para cambiar los stylos que el navegador le atribuye por defecto a esta etiqueta*/
+    font-size: 75%; /*el 75% de 16px son 12px*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+h1 {/*La etiqueta de párrafo es modificada al llamar la etiqueta de html, pero afectar la de título h1 debo llamarla por separado de manera específica*/
+    font-size: inherit; /*Con este atributo le ordeno heredar los estilos de su padre cercano, como ni la etiqueta main ni body tienen un tamaño de fuente estipulado, la toma de la etiqueta html que es la que tiene un tamaño de fuente estipulado; al mirar el inspector de la página se evidencia el cambio*/
+}
