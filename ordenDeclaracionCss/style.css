@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box; /*para recalcular automáticamente el tamaño de modelo de caja*/
+    margin: 0; /*Quita los valores que el navegador pone por defecto*/
+    padding: 0;
+}
+h1{/*si pongo el mouse encima de las etiquetas, visual me muestra el selector de especificidad con los valores de cada uno*/
+    color: purple;
+    font-family: serif;
+    margin-bottom: 10px;
+}
+/*#page-title*/.title {/*elimino el id y dejo solo la clase para tener menos conflictos al poner los stylos*/
+    font-family: Arial, Helvetica, sans-serif;/*si el pc no tiene instalado arial, busca la Helvetica, y si no tiene esta tampoco,usa la del navegador que es sans-serif*/
+}
+#page-title .title { /*Si le agrego el id y la clase tiene mayor especificidad y peso, y este estilo es el que va a tomar el título*/
+    font-size: 18px;
+    font-family: monospace;
+}
+/*#main-nav*/ .nav {/*aquí también, en vez del selector de id usamos el de clase*/
+    margin-top: 10px;
+    list-style-type: none; /*le quita los puntos o viñetas a la lista li*/
+    padding-left: 0;
+}
+/*#main-nav*/ .nav li {
+    display: inline;
+}
+/*#main-nav*/ .nav a {
+    color: white;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+/*#main-nav*/ .nav .blog {/*aunque en el selector anterior hay un color azul, en este a hay una clase específica que reescribe el color para esta de manera específica*/
+    background: red;
+}
+/*NO CONVIENE TENER TANTOS ID EN LOS STYLOS POR ESO LOS CAMBIAMOS POR LAS CLASES*/
