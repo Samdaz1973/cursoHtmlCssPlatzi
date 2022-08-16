@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;/*para no tener problemas con el tamaño de los contenedores en diferentes dispositivos*/
+    margin: 0;
+    padding: 0;/*para quitar las medidas por defecto*/
+}
+/* La diferencia con em, es que rem siempre va a tener referencia al stylo de la etiqueta html del navegador por defecto; mientras que em depende de la dimensión que esté dada en su padre directo
+Para no tener que hacer cálculos se hace la siguiente conversión previa
+*/
+
+html {
+    font-size: 62.5%;
+}
+/* con esta conversión, un rem va a ser igual siempre a 10px; si quiero 16px pongo 1.6rem; si quiero 20px, pongo 2rem; si quiero 30px pongo 3rem */
+p {
+    font-size: 1.6rem;
+}
+/* si tengo textos anidados no van ver variasiones */

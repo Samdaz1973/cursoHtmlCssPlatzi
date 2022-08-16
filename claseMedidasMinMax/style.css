@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100vw;/*que el contenedor del main esté ocupando el 100 del viewport en el ancho*/
+    height: 100vh;/*que el contenedor del main esté ocupando el 100 del viewport en el alto*/
+    background-color: blueviolet;
+}
+section {/*cuando el tamaño de pantalla del dispositivo es más pequeño, el texto desborda el contenedor del section*/
+    width: 80%;
+    min-width: 320px;/*cuando se ajusta a un tamaño más pequeño se adapta, a medida que crece aparecen el espacio lateral y estará centrado*/
+    max-width: 500px;/*con esto se limita el creimiento hasta 500 px aunque el ancho de la pantalla crezca*/
+    /*de esta manera se hacen contenedores flexibles*/
+    /* height: 500px; la razón por la que el texto desborda su contenedor padre, es porque le estamos fijando una altura absoluta y no se puede adaptar pero si le agregamos otro tipo de atributo se corrige el defecto */
+    min-height: 500px;
+    margin: 0 auto; /*el cero es para el margin de arriba no le agrega, y el auto lo centra horizontalmente le agrega margen a la derecha y la izquierda*/
+    background-color: red;
+}

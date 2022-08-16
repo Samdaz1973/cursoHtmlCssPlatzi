@@ -1,0 +1,21 @@
+/* em, significa tamaño del elemento, en este caso de letra del elmento padre, así que toma el tamaño de fuente que tiene el padre directo que trae por defecto la etiqueta html del navegador, recuerde que el tamaño por defecto es 16px, al multiplicar 16 por 1,5 me da 24px */
+/* .text-container {
+    font-size: 1.5em;
+} */
+
+/* si cambio el valor del padre que es el body entonces el texto tendrá un valor de 30px
+body {
+    font-size: 20px;
+}
+.text-container {
+    font-size: 1.5em;
+}
+*/
+/* em se me puede convertir en un problema si no tengo cuidado de donde estoy llamando las dimensiones */
+.text-container {
+    font-size: 1.5em;
+}
+.text-container div {
+    font-size: 1.5em;
+}
+/* El resultado es que tengo dos textos de diferente tamaño; el primero hereda de la etiquetan html del navegador (16px) como padre directo y el segundo hereda del la clase container (24px) como padre directo quedeando en un tamaño de 36px; esto se puede empeorar cuando hay más contenedores anidados*/

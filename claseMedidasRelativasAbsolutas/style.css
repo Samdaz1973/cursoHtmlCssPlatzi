@@ -1,0 +1,22 @@
+/*sin importar la pantalla siempre será un texto de 18 px, esta es una medida absoluta, no va a variar según el tamaño de la pantalla*/
+/* p {
+    font-size: 18px;
+} */
+
+/* si lo pongo en porcentaje va a heredar del elemento html que trae el navegador por defecto; el tamaño por defecto es de 16px y el 50% sería 8px, ese será el tamaño que se refleje */
+/* p {
+    font-size: 50%;
+} */
+
+/* Esto también aplica para el width y el height; sin importar el tamaño de la pantalla el main se va a ajustar al cien por ciento
+Si lo diera en pixeles, y hago la pantalla más chica me va a gener un overflow, es decir que puedo generar un scroll o desplazamiento lateral; por eso es mejor hacerlo adaptable o flexible o relativo y no absoluto.
+*/
+
+main {
+    background-color: red;
+    width: 100%;
+    height: 500px;
+}
+p {
+    font-size: 16px;
+}
