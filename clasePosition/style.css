@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.parent {
+    border: 2px black dotted;/*dotted nos da un borde punteado*/
+    display: inline-block;
+}
+.box {
+    display: inline-block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+#two {
+    background-color: green;
+}
+/* Cuando estamos en posición static no podemos usuar bottom, top, left o rihgt; solo en absolute, relative, fixed o sticky, hay que quitar el stattic primero */
