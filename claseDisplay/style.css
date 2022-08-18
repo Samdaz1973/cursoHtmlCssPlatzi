@@ -1,0 +1,19 @@
+.block-element {/*por defecto el div y el párrafo son elementos block, es decir va utilizar el 100% del espacio del ancho, sin importar qué-tan lago a lo ancho sea el contenido
+    Un display-block me permite agregar márgenes en las 4 direcciones tanto en margin y en el padding*/
+    background-color: green;
+    margin: 10px;
+    padding: 20px;
+}
+.nav {
+    background-color: peachpuff;
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+}
+.nav li {
+    display: inline-block;/*pone la lista en block pero de manera horizontal, es muy util para poner el menú de manera horizontal; en este elemento inline si puedo poner margin y padding arriba y abajo, manipular el width y el height y poner elementos hermanos al lado*/
+    font-size: 20px;
+    margin: 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}

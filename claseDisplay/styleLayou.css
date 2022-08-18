@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header-container {
+    background-color: rgb(214, 231, 226);
+    width: 100vw;
+    height: 65px;
+}
+.header-container div {
+    display: inline-block;
+    position: relative;
+    /* justify-content: end; */
+     /* align-items: center; */
+     /* place-items: center; */
+    /* margin: 0 auto; */ 
+     /* justify-content: space-between; */  
+}
+.logo img {
+   width: 50px;
+   height: 50px;
+   padding-top: 10px;
+   padding-left: 15px;  
+}
+.header-container .nav {
+    position:absolute; /*única manera que encontré para colocar el nav a la derecha*/
+    right: 0;
+    padding-top: 15px;
+    padding-right: 15px;
+    height: 30px;
+}
+ 
+ul li {
+    display: inline;/*para poner la lista horizontal*/
+    padding-right: 10px;/*para separar los li*/
+}
+a {
+    text-decoration: none;/*para quitarle el subrayado a los menus li*/
+}
+
+.main-container {
+    width: 100%;
+    height: 80vh; 
+}
+.aside-container {
+    background-color: rgb(250, 152, 250);
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    /* margin-right: 200px; */
+}
+.aside-container div {
+    display: inline-block;
+    background-color: rgb(241, 214, 228);
+    width: 85%;
+    height: 21%;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-left: 20px;
+    min-width: 100px;
+}
+.main-content {
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(212, 202, 202);
+    width: 80%;
+    height: 80vh;
+    right: 0;
+}
+.foot {
+    background-color: rgb(129, 184, 167);
+    width: 100vw;
+    height: 65px;
+}

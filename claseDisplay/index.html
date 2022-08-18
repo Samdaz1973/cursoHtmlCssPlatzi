@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="block-element">Esta es una etiqueta div</div>
+    <p class="block-element">Esta es una etiqueta párrafo</p>
+    <div class="block-element">
+        <p class="parrafo">soy un texto</p><!--estos textos de la etiqueta p por estar dentro de un div padre con display block hace que la etiqueta p ocupe el ancho de pantalla, y aunque el texto es pequeño, el siguiente texto tiene que ubicarse en el fila de abajo-->
+        <p class="parrafo">soy un texto</p>
+        <p class="parrafo">soy un texto</p>
+    </div>
+    <span>Soy una etiqueta span</span><!--la etiqueta span funciona con el div pero es para texto, y no ocupa el ancho de pantalla -->
+    <span>Soy una etiqueta span</span><!--las dos etiqueta se acomodan una adelante de la otra porque hay espacio, esto es el diplay inline, sólo usa el espacio que ocupa el contenido
+    En esta etiqueta no puedo utilizar el margin o paddin de arriba y abajo, sólo el de los lados; tampoco le puedo dar un width o un height-->
+
+    <!--Elemenos inline block-->
+    <ul class="nav"><!--esta etiqueta por default es display block-->
+        <li>Home</li><!--estos son elementos de una lista y tienen que ordenarse de manera vertical en bloque-->
+        <li>Cursos</li>
+        <li>Instructores</li>
+        <li>Blog</li>
+    </ul>
+</body>
+</html>
