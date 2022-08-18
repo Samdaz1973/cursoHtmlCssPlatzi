@@ -1,0 +1,39 @@
+:root {/*hace referencia a nuestro html, es el punto de partida de nuestro proyecto, por eso las variables hay que ponerla aquí dentro*/
+--primary-color: #003476;
+--secundary-color: #b4d2f7;
+--header-size: 4rem;
+--font: 1.8rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    width: 100vw;
+    height: 15vh;
+    /* background-color: #003476; */
+    background-color: var(--primary-color);
+}
+main {
+    width: 100vw;
+    height: 70vh;
+    /* font-size: 1.8rem; */
+    /* equivale 18px si le pongo un font-size al main mi etiqueta de párrafo va a heredar ese tamaño de fuente*/
+    font-size: var(--font);
+}
+    h1 {
+        /* font-size: 4rem; */
+        /*equivale a 40px 1 rem es igual a 10px*/
+        font-size: var(--header-size);
+        color: var(--primary-color);
+    }
+    footer{
+        width: 100vw;
+        height: 15vh;
+        /* background-color: #b4d2f7; */
+        background-color: var(--secundary-color);
+    }

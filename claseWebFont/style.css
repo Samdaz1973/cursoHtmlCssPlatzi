@@ -1,0 +1,3 @@
+html{
+    font-family: 'Dancing Script', cursive;/*copiamos el font-family de la pagina de googlefonts; esto lo que nos dice que si no se carga la Dancing es reemplazada por la cursive*/
+}

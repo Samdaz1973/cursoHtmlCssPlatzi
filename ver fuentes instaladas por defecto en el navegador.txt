@@ -1,0 +1,9 @@
+En el menú del navegador ir a
+*Configuración
+*Sección de diseño
+*personalizar fuentes
+Hay dos
+*Fuentes serif
+*Fuentes sansserif
+puedo modificar la fuente prederminada
+puedio ir a googlefonts para descargar fuentes

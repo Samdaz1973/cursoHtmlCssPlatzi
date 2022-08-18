@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+html {
+    font-size: 62.5%;/*con esta relación podemos usar rem como si fueran pixeles*/
+}
+body {
+    font-size: 1.6rem;/*que es igual 16px*/
+}
+/*Displayflex nos ayuda a hacer un layout más responsive, elástico y flexible; siempre debemos tener todas las cajas dentro de un contenedor padre*/
+.container {
+    display: flex;
+    /*hace que cada una de las cajas hijos puedan coexistir enfrente de la otra si tiene espacio; trae un propiedad por defecto de display direction en filas que es la dirección en la que se van a acomodar los hijos, pero esto también se puede cambiar; tiene otra funcionalidad */
+    /*flex-direction: column; este atributo puede ponerlos en reverse*/
+    /*con fle-wrap: wrap; al tener más cajas o hacerse más pequeña la pantalla los elementos se bajan a la siguiente fila de manera automática
+    justify-content: center; nos ayuda a alinear el contenido de forma horizontal; también se puede alinear con flex-end; flex-star; para poner espacio entre ellos space-around; space-evenly lo hace con mejor precisión*/
+    border: .3rem solid black;
+    align-items: center;/*flex-end envía todo al lado inferior; flex-star lo pone en la parte superior izquierda; 
+    stretch: estira las cajas al 100% de su contedor padre, para esto hay que deshabilitar el heigth de las cajas
+    baseline: va a tomar el espacio de su contenido, por ejemplo al texto*/
+    height: 50vh;
+     /*CONFIGURACIÓN PARA HACERLO MAS RESPONSIVE
+        dejo el display y el border, le agrego
+        flex-wrap: wrap;
+        quito los flex-grow:1
+        a la clase .box:
+        le quito el width
+        le pongo un 
+        flexf-basis: 10rem;
+        flex-grow: 1;
+    Al achicar el contenedor padre, los contenedores se empiezan a bajar hasta quedar en una sola colummna
+    */
+}
+.box {
+    width: 10rem;
+    height: 10rem;
+}
+.box1 {
+    background-color: blue;
+    /* order: 1; */
+    /*los que tienen un orden empezarán a alinearse a la derecha de los que no*/
+    flex-grow: 1;/*hace que esta caja crezca una o varias posiciones, hasta completar el tamaño de ancho del width, si se lo pongo a dos se reparten el tamaño entre ambos*/
+   
+}
+.box2 {
+    background-color:blueviolet;
+    /* order: 3; */
+    /*este atributo ordena las cajas según el número que le demos*/
+    flex-grow: 1;
+}
+.box3 {
+    background-color: burlywood;
+    /*ojo, todos los contenedores a los que no le ponga un orden se alinearán hacia la izquierda*/
+}
+.box4 {
+    background-color: cadetblue;
+}
+.box5 {
+    background-color: coral;
+    /* order: 4; */
+}
+.box6 {
+    background-color: salmon;
+    /* order: 2; */
+}
