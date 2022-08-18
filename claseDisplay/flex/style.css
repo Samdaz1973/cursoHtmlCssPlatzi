@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+html {
+    font-size: 62.5%;/*con esta relación podemos usar rem como si fueran pixeles*/
+}
+body {
+    font-size: 1.6rem;/*que es igual 16px*/
+}
+/*Displayflex nos ayuda a hacer un layout más responsive, elástico y flexible; siempre debemos tener todas las cajas dentro de un contenedor padre*/
+.container {
+    display: flex;
+    /*hace que cada una de las cajas hijos puedan coexistir enfrente de la otra si tiene espacio; trae un propiedad por defecto de display direction en filas que es la dirección en la que se van a acomodar los hijos, pero esto también se puede cambiar; tiene otra funcionalidad */
+    /*flex-direction: column; este atributo puede ponerlos en reverse*/
+    /*con fle-wrap: wrap; al tener más cajas o hacerse más pequeña la pantalla los elementos se bajan a la siguiente fila de manera automática
+    justify-content: center; nos ayuda a alinear el contenido de forma horizontal; también se puede alinear con flex-end; flex-star; para poner espacio entre ellos space-around; space-evenly lo hace con mejor precisión*/
+    border: .3rem solid black;
+}
+.box {
+    width: 10rem;
+    height: 10rem;
+}
+.box1 {
+    background-color: blue;
+}
+.box2 {
+    background-color:blueviolet;
+}
+.box3 {
+    background-color: burlywood;
+}
+.box4 {
+    background-color: cadetblue;
+}
+.box5 {
+    background-color: coral;
+}
+.box6 {
+    background-color: salmon;
+}
