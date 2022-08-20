@@ -1,0 +1,17 @@
+.container {
+    width: 800px;
+    margin-left: auto;/*de esta manera cuando pase de 800 px empezará a aparecer un margen vlando tanto a la derecha como a la izquierda y va a quedar centrada*/
+    margin-right: auto;
+}
+.c1 {
+    width: 60%;
+}
+.c2 {
+    width: 40%;
+}
+.c3, .c4 {
+    width: 33%;
+}
+.c5 {
+    width: 34%;
+}

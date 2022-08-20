@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <picture><!--esta etiqueta se convierte en el contenedor de nuestra imagen-->
+            <source media="(min-width: 1300px)" srcset="./imgs/Large.jpg">
+            <source media="(min-width: 1000px)" srcset="./imgs/medium.jpg">
+            <!--esta etiqueta source nos sirve para poner imágenes para usar en otros tamaños para otros dispositivos
+            Para que lo lean los dispositivos respectivos debemos colocarle la etiqueta media con el tamaño de pantalla y srcset-->
+            
+            <img src="./imgs/small.jpg" alt="imagen de ejemplo"><!--esta imagen es la que se va a descargar en el dispositivo mobile-->
+        </picture>
+    </main>
+</body>
+</html>

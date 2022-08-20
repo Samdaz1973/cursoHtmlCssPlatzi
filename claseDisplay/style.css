@@ -10,6 +10,7 @@
     list-style: none;
     text-align: center;
 }
+/* el display inline no puedo manipular el margin y padding arriba y abajo, y tampobo puedo manipular el width y el height */
 .nav li {
     display: inline-block;/*pone la lista en block pero de manera horizontal, es muy util para poner el menú de manera horizontal; en este elemento inline si puedo poner margin y padding arriba y abajo, manipular el width y el height y poner elementos hermanos al lado*/
     font-size: 20px;

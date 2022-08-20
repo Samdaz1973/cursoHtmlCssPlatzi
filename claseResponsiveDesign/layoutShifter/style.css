@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;/*para evitar el scroll horizontal*/
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;/*para implementar rem en el tamaño de la fuente, 10px = 1rem*/
+}
+.container {
+    display: flex;/*un contenedor que se adapte*/
+    flex-wrap: wrap;/*para que el contenido pueda reposicionarse a medida que crezca o se achique el tamaño del viewport*/
+}
+.c1, .c2, .c3, .c4, .c5 {/*aplicarle stylos a diferentes clases a la vez*/
+    width: 100%;
+    min-width: 150px;
+    height: 150px;
+}
+.c4 {/*reescribirmos la altura del contenedor 4 porque es padre del 2 y 3 para que se muestren todos*/
+    height: auto;
+}
+.c1 { 
+    background-color: #003476;
+}
+.c2 {
+    background-color: #0062d2;
+}
+.c3 {
+    background-color: #b4d2f7;
+} 
+.c4 {
+    background-color: #d5dfef;
+}
+.c5 {
+    background-color: #dfe1e5;
+}
+
+@media (min-width: 600px) {
+    .c1 {
+        width: 25%;
+    }
+    .c4 {
+        width: 75%;
+    }
+    .c5 {
+        width: 100%;
+    }
+}
+@media (min-width: 800px) {
+    .container {
+        margin-left: auto;/*para centrar el container una vez pase de 800px*/
+        margin-right: auto;
+        /* margin: 0 auto; esta es otra manera de hacerlo*/
+    }
+    .c1 {
+        width: 50%;
+        order: 1;
+    }
+    .c4 {
+        width: 100%;
+    }
+    .c5 {
+        width: 50%;
+        order: 2;
+    }
+}
